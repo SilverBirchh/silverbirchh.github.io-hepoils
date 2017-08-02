@@ -107,3 +107,5 @@ layout: page
       </header>
     </div>
   </section>
+
+  <img style="display: hidden;" class="icon major" src="images/delivery.jpeg" alt="Recycling"/>
