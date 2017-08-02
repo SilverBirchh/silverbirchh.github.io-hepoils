@@ -707,6 +707,13 @@
 
 /* Banner */
 
+	#truck {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center bottom;
+	}
+
 	#banner {
 		background-image: url('/images/delivery.jpeg');
 		background-position: center bottom;
