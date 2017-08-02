@@ -1,3 +1,6 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+---
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
@@ -708,7 +711,7 @@
 /* Banner */
 
 	#banner {
-		background-image: url('../../images/delivery.jpeg');
+		background-image: url('{{ "/images/delivery.jpeg" | relative_url }}');
 		background-position: center bottom;
 		background-size: cover;
 		height: 28em;
