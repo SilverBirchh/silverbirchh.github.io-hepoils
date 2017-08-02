@@ -4,18 +4,17 @@
 {% include head.html %}
 
 <body class="index">
-    <div id="page-wrapper">
-          {% include page-header.html %} {{ content }} {% include footer.html %}
-    </div>
+  <div id="page-wrapper">
+    {% include page-header.html %} {{ content }} {% include footer.html %}
+  </div>
 
-    <!-- Scripts -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/jquery.dropotron.min.js"></script>
-    <script src="/js/skel.min.js"></script>
-    <script src="/js/util.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/jquery.scrolly.min.js"></script>
-
+  <!-- Scripts -->
+  <script src "{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+  <script src "{{ "js/jquery.dropotron.min.js " | prepend: site.baseurl }}"></script>
+  <script src "{{ "/js/skel.min.js " | prepend: site.baseurl }}"></script>
+  <script src "{{ "/js/util.js " | prepend: site.baseurl }}"></script>
+  <script src "{{ "/js/jquery.scrolly.min.js " | prepend: site.baseurl }}"></script>
+  <script src "{{ "/js/main.js " | prepend: site.baseurl }}"></script>
 </body>
 
 </html>
