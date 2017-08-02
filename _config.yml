@@ -28,7 +28,7 @@ permalink: none
 markdown: kramdown
 sass:
   sass_dir: _sass
-include: ['_pages', 'js']
+include: ['_pages', 'images']
 gems:
   - jekyll-feed
 exclude:
