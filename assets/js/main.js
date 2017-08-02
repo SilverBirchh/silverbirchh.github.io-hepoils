@@ -51,7 +51,7 @@
 				$(
 					'<div id="titleBar">' +
 						'<a href="#navPanel" class="toggle"></a>' +
-						'<span class="title">' + $('#logo').html() + '</span>' +
+						'<span class="title">' + 'Hep Oils' + '</span>' +
 					'</div>'
 				)
 					.appendTo($body);

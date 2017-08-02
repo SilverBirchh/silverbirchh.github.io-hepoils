@@ -1,6 +1,7 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
+@import 'partials/_logo';
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
@@ -707,8 +708,8 @@
 /* Banner */
 
 	#banner {
-		background-image: url('../../images/banner.jpg');
-		background-position: center center;
+		background-image: url('../../images/delivery.jpeg');
+		background-position: center bottom;
 		background-size: cover;
 		height: 28em;
 		text-align: center;
