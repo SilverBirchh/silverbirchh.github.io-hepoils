@@ -3,14 +3,14 @@
 
     <!-- Logo -->
       <header class="special container">
-          <img class="logo" alt="Hep Oils" src="images/hepoil-logo.png"/>
+          <img class="logo" alt="Hep Oils" src="{{ "/images/hepoil-logo.png" | relative_url }}"/>
       </header>
 
     <!-- Nav -->
       <nav id="nav">
         <ul>
-          <li class="current"><a href="index.html">Home</a></li>
-          <li><a href="">Get A Quote</a></li>
+          <li {% if page.permalink == "/" %}class="current"{% endif %}><a href="/">Home</a></li>
+          <li {% if page.permalink == "/quote/" %}class="current"{% endif %}><a href="/quote">Get A Quote</a></li>
           <li><a href="">Supply</a></li>
           <li>
             <a href="#">Collection</a>

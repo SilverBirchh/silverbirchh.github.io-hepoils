@@ -1,0 +1,36 @@
+---
+layout: page
+---
+
+<!-- Main -->
+<section class="wrapper style1">
+  <div class="container">
+    <div class="row 200%">
+      <div class="8u 12u(narrower)">
+        <div id="content">
+
+          <!-- Content -->
+
+          <article>
+            <header>
+              <h2>{{ page.title }}</h2>
+              {% if page.slogan %}<p>{{ page.slogan }}</p>{% endif %}
+            </header>
+
+            {{ content }}
+
+          </article>
+
+        </div>
+      </div>
+      <!--Side Bar 1-->
+      <div class="4u 12u(narrower)">
+        <div id="sidebar">
+          {% for item in page.includes %}
+            {% include {{item}} %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
