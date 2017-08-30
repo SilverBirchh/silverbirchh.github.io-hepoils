@@ -362,6 +362,10 @@
 	}
 
 	ul {
+		&.with-bullets {
+			list-style: circle;
+		}
+
 		&.default {
 			list-style: disc;
 			padding-left: 1em;
@@ -501,6 +505,7 @@
 		text-decoration: none;
 		font-weight: 600;
 		letter-spacing: -0.025em;
+		outline: none;
 
 		&:hover {
 			background-color: lighten(_palette(accent, bg), 5);
