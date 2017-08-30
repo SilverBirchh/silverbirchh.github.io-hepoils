@@ -11,7 +11,7 @@
         <ul>
           <li {% if page.permalink == "/" %}class="current"{% endif %}><a href="{{ "/" | relative_url }}">Home</a></li>
           <li {% if page.permalink == "/quote/" %}class="current"{% endif %}><a href="{{ "/quote" | relative_url }}">Get A Quote</a></li>
-          <li><a href="">Supply</a></li>
+          <li {% if page.permalink == "/supply/" %}class="current"{% endif %}><a href="{{ "/supply" | relative_url }}">Supply</a></li>
           <li>
             <a href="#">Collection</a>
             <ul>

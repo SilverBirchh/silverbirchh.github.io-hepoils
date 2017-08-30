@@ -11,15 +11,23 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+	// Breakpoints
+	$wide: 1680px;
+	$normal: 1280px;
+	$narrow: 980px;
+	$narrower: 840px;
+	$mobile: 736px;
+	$mobilep: 480px;
+
 	@import "libs/skel";
 
 	@include skel-breakpoints((
-		wide: '(max-width: 1680px)',
-		normal: '(max-width: 1280px)',
-		narrow: '(max-width: 980px)',
-		narrower: '(max-width: 840px)',
-		mobile: '(max-width: 736px)',
-		mobilep: '(max-width: 480px)'
+		wide: '(max-width:  ' + $wide+ ')',
+		normal: '(max-width:  ' + $normal+ ')',
+		narrow: '(max-width:  ' + $narrow+ ')',
+		narrower: '(max-width: ' + $narrower+ ')',
+		mobile: '(max-width:  ' + $mobile+ ')',
+		mobilep: '(max-width:  ' + $mobilep + ')'
 	));
 
 	@include skel-layout((
@@ -59,9 +67,11 @@
 		)
 	));
 
-/* Basic */
+	@import 'partials/_sidebars';
 
+/* Basic */
 	body {
+		height: 100%;
 		background: _palette(bg) url('images/bg01.png');
 
 		&.is-loading {
@@ -867,7 +877,6 @@
 			#banner {
 				height: 24em;
 			}
-
 	}
 
 /* Normal */
