@@ -155,7 +155,6 @@
 
 	hr {
 		border-top: solid 1px _palette(border);
-		border: 0;
 		margin-bottom: 1.5em;
 	}
 
@@ -210,6 +209,12 @@
 		&.major {
 			padding-top: 3em;
 		}
+	}
+
+	.shadow-box {
+		padding: 5px;
+    background-color: whitesmoke;
+		box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.4);
 	}
 
 /* Form */
@@ -277,7 +282,7 @@
 
 		&.shadow {
 			box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.4);
-    	background: #fff;	
+    	background: #fff;
 		}
 
 		border: 0;

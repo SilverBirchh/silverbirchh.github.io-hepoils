@@ -12,10 +12,10 @@
           <li {% if page.permalink == "/" %}class="current"{% endif %}><a href="{{ "/" | relative_url }}">Home</a></li>
           <li {% if page.permalink == "/quote/" %}class="current"{% endif %}><a href="{{ "/quote" | relative_url }}">Get A Quote</a></li>
           <li {% if page.permalink == "/supply/" %}class="current"{% endif %}><a href="{{ "/supply" | relative_url }}">Supply</a></li>
-          <li>
+          <li {% if page.permalink == "/waste-food-collection/" %}class="current"{% endif %}>
             <a href="#">Collection</a>
             <ul>
-              <li><a href="#">Waste Food Collection</a></li>
+              <li><a href="{{ "/waste-food-collection" | relative_url }}">Waste Food Collection</a></li>
               <li><a href="#">Waste Oil Collection</a></li>
             </ul>
           </li>
