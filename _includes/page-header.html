@@ -20,7 +20,7 @@
             </ul>
           </li>
           <li><a href="">Recycling</a></li>
-          <li><a href="">FAQ's</a></li>
+          <li {% if page.permalink == "/faqs/" %}class="current"{% endif %}><a href="{{ "/faqs" | relative_url }}">FAQ's</a></li>
           <li><a href="">About Us</a></li>
         </ul>
       </nav>
