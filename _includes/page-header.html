@@ -19,7 +19,7 @@
               <li><a href="{{ "/waste-oil-collection" | relative_url }}">Waste Oil Collection</a></li>
             </ul>
           </li>
-          <li><a href="">Recycling</a></li>
+          <li {% if page.permalink == "/recycling/" %}class="current"{% endif %}><a href="{{ "/recycling" | relative_url }}">Recycling</a></li>
           <li><a href="">FAQ's</a></li>
           <li><a href="">About Us</a></li>
         </ul>
