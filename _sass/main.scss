@@ -2,6 +2,7 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'partials/_logo';
+@import 'partials/_quote';
 @import 'partials/_accordion';
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
@@ -212,12 +213,6 @@
 		}
 	}
 
-	.shadow-box {
-		padding: 5px;
-    background-color: whitesmoke;
-		box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.4);
-	}
-
 /* Form */
 
 	input[type="text"],
@@ -225,20 +220,15 @@
 	input[type="email"],
 	textarea {
 		@include vendor('appearance', 'none');
-		@include vendor('transition', 'border-color 0.2s ease-in-out');
 		background: #fff;
-		border: solid 1px _palette(border);
-		border-radius: _size(radius);
 		color: inherit;
 		display: block;
 		outline: 0;
 		padding: 0.75em;
 		text-decoration: none;
 		width: 100%;
-
-		&:focus {
-			border-color: _palette(accent, bg);
-		}
+		line-height: 1em;
+    border: none;
 	}
 
 	input[type="text"],
