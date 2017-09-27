@@ -1,9 +1,10 @@
 {% unless include.noTitle %}<h3>Get in Touch</h3>{% endunless %}
-<form {% if include.useShadow %}class="shadow-box" {% endif %}>
+<form {% if include.useShadow %}class="shadow-box" {% endif %} action="https://formspree.io/info@hepoils.com"
+      method="POST">
   <div class="row 100%">
     <div class="12u 12u(mobilep)">
       <label>
-        <input class="fields" id="name" type="text" placeholder="Name">
+        <input class="fields" id="name" name="name" type="text" placeholder="Name">
         <span></span>
       </label>
     </div>
@@ -11,7 +12,7 @@
   <div class="row 100%">
     <div class="12u 12u(mobilep)">
       <label>
-        <input class="fields" id="email" type="email" placeholder="Email">
+        <input class="fields" id="email" name="_replyto" type="email" placeholder="Email">
         <span></span>
       </label>
     </div>
@@ -19,7 +20,7 @@
   <div class="row 100%">
     <div class="12u 12u(mobilep)">
       <label>
-        <input class="fields" id="number" type="text" placeholder="Number">
+        <input class="fields" id="number" name="number" type="text" placeholder="Number">
         <span></span>
       </label> </div>
   </div>
@@ -47,7 +48,7 @@
         </div>
         <div>
           <label for="food-col">Waste Food Collection
-        <input type="checkbox" id="oil-col" name="interest" value="oil-col">
+        <input type="checkbox" id="oil-col" name="interest" value="food-col">
       </label>
         </div>
       </fieldset>
@@ -60,4 +61,5 @@
       </ul>
     </div>
   </div>
+  <input type="text" name="_gotcha" style="display:none" />
 </form>
