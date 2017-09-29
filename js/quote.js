@@ -1,3 +1,5 @@
+---
+---
 // For an enquire click. Could use a class here but nevermind
 jQuery(function($) {
 
@@ -6,7 +8,7 @@ jQuery(function($) {
   $('.enquire')
     .click(function(event) {
       const message = `I would like to enquire about a supply of ${selectOil(event)}.`
-      location.href = `/quote/?message=${message}&type=oil-col`
+      location.href = "{{ site.baseurl}}" + `quote/?message=${message}&type=oil-col`
     })
 
   function selectOil(event) {
@@ -16,22 +18,21 @@ jQuery(function($) {
   }
 
   function getURLParameter(sParam) {
-    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-      sURLVariables = sPageURL.split('&'),
-      sParameterName,
-      i;
+    const sPageURL = decodeURIComponent(window.location.search.substring(1)),
+      sURLVariables = sPageURL.split('&');
+    let sParameterName, i;
 
-    for (i = 0; i < sURLVariables.length; i++) {
-      sParameterName = sURLVariables[i].split('=');
+      for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
 
-      if (sParameterName[0] === sParam) {
-        return sParameterName[1] === undefined ? true : sParameterName[1];
+        if (sParameterName[0] === sParam) {
+          return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
       }
-    }
   }
 
   function setQuoteMessageIfApplicable() {
-    if (location.pathname === '/quote/') {
+    if (location.pathname.includes('quote')) {
       let quote = getURLParameter('message');
       let type = getURLParameter('type');
 
