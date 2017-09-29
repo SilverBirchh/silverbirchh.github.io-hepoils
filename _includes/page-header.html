@@ -20,8 +20,8 @@
             </ul>
           </li>
           <li {% if page.permalink == "/recycling/" %}class="current"{% endif %}><a href="{{ "/recycling" | relative_url }}">Recycling</a></li>
-          <li><a href="">FAQ's</a></li>
-          <li><a href="">About Us</a></li>
+          <li {% if page.permalink == "/faqs/" %}class="current"{% endif %}><a href="{{ "/faqs" | relative_url }}">FAQ's</a></li>
+          <li {% if page.permalink == "/about/" %}class="current"{% endif %}><a href="{{ "/about" | relative_url }}">About Us</a></li>
         </ul>
       </nav>
 

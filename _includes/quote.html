@@ -1,46 +1,59 @@
-<form {% if include.useShadow %}class="shadow-box"{% endif %}>
+{% unless include.noTitle %}<h3>Get in Touch</h3>{% endunless %}
+<form {% if include.useShadow %}class="shadow-box" {% endif %} action="https://formspree.io/info@hepoils.com"
+      method="POST">
   <div class="row 100%">
     <div class="12u 12u(mobilep)">
-      <input type="text" name="name" id="name" placeholder="Name" />
+      <label>
+        <input class="fields" id="name" name="name" type="text" placeholder="Name" required>
+        <span></span>
+      </label>
     </div>
   </div>
   <div class="row 100%">
     <div class="12u 12u(mobilep)">
-      <input type="email" name="email" id="email" placeholder="Email" />
+      <label>
+        <input class="fields" id="email" name="_replyto" type="email" placeholder="Email" required>
+        <span></span>
+      </label>
     </div>
   </div>
   <div class="row 100%">
     <div class="12u 12u(mobilep)">
-      <input type="text" name="number" id="number" placeholder="Contact Number" />
+      <label>
+        <input class="fields" id="number" name="number" type="text" placeholder="Number">
+        <span></span>
+      </label> </div>
+  </div>
+  <div class="row 50%">
+    <div class="12u">
+      <label>
+        <textarea class="fields" name="message" id="message" placeholder="Message" rows="5"></textarea>
+        <span></span>
+      </label>
     </div>
   </div>
   <div class="row 50%">
     <div class="12u">
-      <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-    </div>
-  </div>
-  <div class="row 50%">
-    <div class="12u">
-  <fieldset>
-    <legend>I'm interested in....</legend>
-    <div>
-      <label for="supply">Cooking Oil Supply
+      <fieldset>
+        <legend>I'm interested in....</legend>
+        <div>
+          <label for="supply">Cooking Oil Supply
         <input type="checkbox" id="supply" name="interest" value="supply">
     </label>
-    </div>
-    <div>
-      <label for="oil-col">Waste Oil Collection
+        </div>
+        <div>
+          <label for="oil-col">Waste Oil Collection
         <input type="checkbox" id="oil-col" name="interest" value="oil-col">
       </label>
-    </div>
-    <div>
-      <label for="food-col">Waste Food Collection
-        <input type="checkbox" id="oil-col" name="interest" value="oil-col">
+        </div>
+        <div>
+          <label for="food-col">Waste Food Collection
+        <input type="checkbox" id="oil-col" name="interest" value="food-col">
       </label>
+        </div>
+      </fieldset>
     </div>
-  </fieldset>
-</div>
-</div>
+  </div>
   <div class="row 50%">
     <div class="12u">
       <ul class="actions">
@@ -48,4 +61,5 @@
       </ul>
     </div>
   </div>
+  <input type="text" name="_gotcha" style="display:none" />
 </form>

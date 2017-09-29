@@ -1,0 +1,33 @@
+@import "libs/skel";
+
+.shadow-box {
+  padding: 10px;
+  overflow: hidden;
+  background: #f3f3f3;
+  color: black;
+}
+
+label {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fields {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+}
+.fields + span {
+  display: block;
+  border-bottom: 1px solid #36bdf7;
+  width: 0;
+  @include vendor('transition', 'width 250ms ease-in-out');
+}
+
+.fields:focus + span {
+  width: 100%;          /*  used calc first, but won't work on Edge  */
+  @include vendor('transition', 'width 250ms ease-in-out');
+
+}
