@@ -866,9 +866,16 @@
 
 		.copyright {
 			color: _palette(fg-light);
-			margin-top: 1.5em;
 			text-align: center;
 			font-size: 0.9em;
+
+			ul {
+				margin: 0;
+			}
+		}
+
+		p.copyright {
+			margin-top: 4em;
 		}
 	}
 
