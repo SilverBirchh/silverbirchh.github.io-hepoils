@@ -2,6 +2,7 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'partials/_logo';
+@import 'partials/_recycle';
 @import 'partials/_quote';
 @import 'partials/_accordion';
 @import url("font-awesome.min.css");
@@ -1034,7 +1035,7 @@
 					position: relative;
 					padding-left: 7em;
 
-					i {
+					i, img, div {
 						position: absolute;
 						margin: 0;
 						left: 0;
