@@ -15,15 +15,12 @@
 # in the templates via {{ site.myvariable }}.
 title: Hep Oils
 email: bradleybirch09@yahoo.co.uk
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog. Use this for DEV
-url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+description: > # Hep Oils take care of all your requirements with regard to supply & collection of cooking oils. We will ensure all waste is recycled, allowing you to continue your daily business safe in the knowledge that you are not only compliant but able to show due consideration to the constant need to recycle, renew & replenish.
+#baseurl: "" # the subpath of your site, e.g. /blog. Use this for DEV
+#url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 
-#baseurl: "/silverbirchh.github.io-hepoils/" #use this for PROD
-#url: "https://silverbirchh.github.io" # use this for PROD
+baseurl: "/silverbirchh.github.io-hepoils/" #use this for PROD
+url: "https://silverbirchh.github.io" # use this for PROD
 
 permalink: none
 
@@ -34,6 +31,10 @@ sass:
 include: ['_pages', 'images', 'js']
 gems:
   - jekyll-feed
+  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock
+
+plugins_dir:
+  - jekyll-seo-tag
