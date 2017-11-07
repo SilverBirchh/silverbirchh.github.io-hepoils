@@ -5,6 +5,7 @@
 @import 'partials/_recycle';
 @import 'partials/_quote';
 @import 'partials/_accordion';
+@import 'partials/_my-slider';
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
@@ -764,6 +765,7 @@ img.hidden {
 			background: rgba(27,27,27,0.75);
 			color: #fff;
 			padding: 1.5em 0;
+			z-index: 1;
 
 			h2 {
 				display: inline-block;

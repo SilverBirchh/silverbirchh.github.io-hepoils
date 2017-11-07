@@ -6,18 +6,29 @@ layout: page
 permalink: /
 ---
 <!-- Banner -->
-<section id="banner">
-  <img src="images/truck1.png" id="truck" class="truc w3-animate-fading">
-  <img src="images/cooks.jpg" id="truck" class="truc w3-animate-fading">
-  <img src="images/products.png" id="truck" class="truc w3-animate-fading">
-  <img src="images/earth.jpg" id="truck" class="truc w3-animate-fading">
+  <div class="ism-slider" data-play_type="loop" data-radios="false" id="banner">
+  <ol>
+    <li>
+      <img src="images/truck1.png" class="truck">
+    </li>
+    <li>
+      <img src="images/cooks.jpg" class="truck">
+    </li>
+    <li>
+      <img src="images/products.png" class="truck">
+    </li>
+    <li>
+      <img src="images/earth.jpg" class="truck">
+    </li>
+  </ol>
+
 
     <header>
       <h2>Hep Oils.<em><a class="scrolly" href="#products">Taking care of your cooking oil supply and collection</a></em></h2>
       <a ref="#" href="{{ "/quote" | relative_url }}" class="button">Get a Quote</a>
       <a ref="#" href="#services" class="button">Services</a>
     </header>
-</section>
+</div>
 
 <!-- Highlights -->
   <section id="products" class="wrapper style1">
