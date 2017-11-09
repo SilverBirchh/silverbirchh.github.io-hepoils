@@ -71,6 +71,9 @@
   border: none;
   position: absolute;
   pointer-events: none;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .ism-button {
