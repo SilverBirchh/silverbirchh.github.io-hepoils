@@ -177,6 +177,7 @@ jQuery(function(a) {
                         'Operating in eco-friendly manner.']
       const domCaption = document.getElementById('home_caption');
       index = index === 4 ? 0 : index;
+      index = index === -1 ? 3 : index;
       domCaption.text = captions[index];
     }
 
