@@ -357,7 +357,14 @@
 			&:before {
 				font-size: 36px;
 			}
+
+			&.clear {
+				background-color: transparent;
+
+			}
 		}
+
+
 	}
 
 /* Lists */
