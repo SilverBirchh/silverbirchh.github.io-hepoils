@@ -20,11 +20,15 @@ description: > #
   of cooking oils. We will ensure all waste is recycled, allowing you to continue your daily business
   safe in the knowledge that you are not only compliant but able to show due consideration to the constant
   need to recycle, renew & replenish.
+
 #baseurl: "" # the subpath of your site, e.g. /blog. Use this for DEV
 #url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 
-baseurl: "/silverbirchh.github.io-hepoils/" #use this for PROD
-url: "https://silverbirchh.github.io" # use this for PROD
+baseurl: "" #use this for PROD
+url: "http://hepoils.com/" # use this for PROD
+
+#baseurl: "/silverbirchh.github.io-hepoils/" #use this for TEST
+#url: "https://silverbirchh.github.io" # use this for TEST
 
 permalink: none
 
