@@ -150,7 +150,8 @@ h6 {
   }
 }
 
-h2 {
+h2,
+h1 {
   font-size: 1.75em;
   letter-spacing: -0.025em;
 }
@@ -207,7 +208,8 @@ header {
     text-align: center;
     margin: 0 0 2em 0;
 
-    h2 {
+    h2,
+    h1 {
       font-size: 2.25em;
     }
 
@@ -790,7 +792,8 @@ img.truck {
     padding: 1.5em 0;
     z-index: 1;
 
-    h2 {
+    h2,
+    h1 {
       display: inline-block;
       margin: 0;
       font-size: 1.25em;
@@ -857,7 +860,8 @@ img.truck {
   padding: 3.5em 0;
 
   header {
-    h2 {
+    h2,
+    h1 {
       display: inline-block;
       vertical-align: middle;
       margin: 0;
@@ -1067,7 +1071,8 @@ img.truck {
       text-align: center;
       margin: 0 0 2em 0;
 
-      h2 {
+      h2,
+      h1 {
         font-size: 1.75em;
       }
 
@@ -1119,7 +1124,9 @@ img.truck {
     height: 20em;
 
     header {
-      h2 {
+      h2,
+      h1,
+      h1 {
         display: block;
       }
 
@@ -1309,7 +1316,8 @@ img.truck {
     line-height: 1.35em;
   }
 
-  h2 {
+  h2,
+  h1 {
     font-size: 1.25em;
     letter-spacing: 0;
     line-height: 1.35em;
@@ -1330,7 +1338,8 @@ img.truck {
     &.major {
       padding: 0 20px;
 
-      h2 {
+      h2,
+      h1 {
         font-size: 1.25em;
       }
 
