@@ -25,7 +25,7 @@ description: > #
 #url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 
 baseurl: "" #use this for PROD
-url: "http://hepoils.com/" # use this for PROD
+url: "http://hepoils.com" # use this for PROD
 
 #baseurl: "/silverbirchh.github.io-hepoils/" #use this for TEST
 #url: "https://silverbirchh.github.io" # use this for TEST
@@ -41,9 +41,12 @@ include: ['_pages', 'images', 'js']
 gems:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+
 exclude:
   - Gemfile
   - Gemfile.lock
 
 plugins_dir:
   - jekyll-seo-tag
+  - jekyll-sitemap
