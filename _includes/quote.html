@@ -4,7 +4,7 @@
   <div class="row 100%">
     <div class="12u 12u(mobilep)">
       <label>
-        <input class="fields" id="name" name="name" type="text" placeholder="Name" required>
+        <input class="fields" id="name" name="name" type="text" autocomplete='name' placeholder="Name" required>
         <span></span>
       </label>
     </div>
@@ -12,7 +12,7 @@
   <div class="row 100%">
     <div class="12u 12u(mobilep)">
       <label>
-        <input class="fields" id="email" name="_replyto" type="email" placeholder="Email" required>
+        <input class="fields" id="email" name="_replyto" type="email" autocomplete='email' placeholder="Email" required>
         <span></span>
       </label>
     </div>
@@ -20,7 +20,7 @@
   <div class="row 100%">
     <div class="12u 12u(mobilep)">
       <label>
-        <input class="fields" id="number" name="number" type="text" placeholder="Number">
+        <input class="fields" id="number" name="number" autocomplete='tel' type="text" placeholder="Number">
         <span></span>
       </label> </div>
   </div>
@@ -61,5 +61,5 @@
       </ul>
     </div>
   </div>
-  <input type="text" name="_gotcha" style="display:none" />
+  <input autocomplete='none' type="text" name="_gotcha" style="display:none" />
 </form>
