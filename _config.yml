@@ -32,6 +32,12 @@ url: "http://hepoils.com" # use this for PROD
 
 permalink: none
 
+manifest_name: Hep Oils
+manifest_short_name: Hep Oils
+manifest_lang: en
+manifest_background_color: FFF
+manifest_display: standalone
+
 # Build settings
 markdown: kramdown
 sass:
