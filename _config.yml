@@ -16,21 +16,27 @@
 title: Hep Oils
 email: bradleybirch09@yahoo.co.uk
 description: > #
-  Hep Oils take care of all your requirements with regard to supply & collection
-  of cooking oils. We will ensure all waste is recycled, allowing you to continue your daily business
-  safe in the knowledge that you are not only compliant but able to show due consideration to the constant
+  Hep Oils take care of your needs with regard to supply & collection
+  of cooking oils. We ensure all waste is recycled, allowing you to continue your business
+  safe in the knowledge you are not only compliant but able to show due consideration to the constant
   need to recycle, renew & replenish.
 
 #baseurl: "" # the subpath of your site, e.g. /blog. Use this for DEV
 #url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 
 baseurl: "" #use this for PROD
-url: "http://hepoils.com/" # use this for PROD
+url: "http://hepoils.com" # use this for PROD
 
 #baseurl: "/silverbirchh.github.io-hepoils/" #use this for TEST
 #url: "https://silverbirchh.github.io" # use this for TEST
 
 permalink: none
+
+manifest_name: Hep Oils
+manifest_short_name: Hep Oils
+manifest_lang: en
+manifest_background_color: FFF
+manifest_display: standalone
 
 # Build settings
 markdown: kramdown
@@ -41,9 +47,12 @@ include: ['_pages', 'images', 'js']
 gems:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+
 exclude:
   - Gemfile
   - Gemfile.lock
 
 plugins_dir:
   - jekyll-seo-tag
+  - jekyll-sitemap

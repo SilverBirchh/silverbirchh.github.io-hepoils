@@ -11,41 +11,45 @@ permalink: /
   </header>
   <ol>
     <li>
-      <img src="images/truck1.png" class="truck" alt="delivery trucks">
+      <object data="images/truck1.webp" type="image/webp" class="truck" alt="delivery trucks">
+       <img data-src="images/truck1.png" class="truck" alt="delivery trucks"/>
+      </object>
     </li>
     <li>
-      <img src="images/cooks.jpg" class="truck" alt="cooking oils">
+      <img data-src="images/cooks.jpg" class="truck" alt="cooking oils">
     </li>
     <li>
-      <img src="images/products.png" class="truck" alt="fresh oil">
+      <object data="images/products.webp" type="image/webp" class="truck" alt="fresh oil">
+       <img data-src="images/products.png" class="truck" alt="fresh oil"/>
+      </object>
     </li>
     <li>
-      <img src="images/earth.jpg" class="truck" alt="eco friendly">
+      <img data-src="images/earth.jpg" class="truck" alt="eco friendly">
     </li>
   </ol>
 </div>
 
 <!-- Highlights -->
-<section id="products" class="wrapper style1">
+<section  class="wrapper style1">
   <div class="container">
     <div class="row 200%">
       <section class="4u 12u(narrower)">
         <div class="box highlight">
-          <img class="icon major" src="images/oil.png" alt="Supply of Cooking Oils" />
+          <img class="icon major" data-src="images/oil.png" alt="Supply of Cooking Oils" />
           <h3><a ref="#" href="{{ "/supply" | relative_url }}">Supply of Cooking Oils</a></h3>
           <p>Whatever your cooing needs we provide a variety of cooking oils. These include long life vegetable oils, rapeseed oil, groundnut & olive oil. Specialist oils are available on request.</p>
         </div>
       </section>
       <section class="4u 12u(narrower)">
         <div class="box highlight">
-          <img class="icon major" src="images/oil-2.png" alt="Collection of Waste Oil" />
+          <img class="icon major" data-src="images/oil-2.png" alt="Collection of Waste Oil" />
           <h3><a ref="#" href="{{ "/waste-oil-collection/" | relative_url }}">Collection of Waste Oil</a></h3>
           <p>Within any establishment where food is prepared & served, oil waste becomes a by-product. We have sought ways to utilize this valuable resource to prevent its destruction disposal in landfill.</p>
         </div>
       </section>
       <section class="4u 12u(narrower)">
         <div class="box highlight">
-          <img class="icon major" src="images/oil-3.png" alt="Recycling" />
+          <img class="icon major" data-src="images/oil-3.png" alt="Recycling" />
           <h3><a ref="#" href="{{ "/waste-food-collection/" | relative_url }}">Collection of Waste Food</a></h3>
           <p>Along with waste oils waste there will be food waste. It is important that this waste is disposed of carefully and Hep Olis does this by turing your waste in to renewable energy resources.</p>
         </div>
@@ -70,7 +74,7 @@ permalink: /
     <div class="row">
       <section class="6u 12u(narrower)">
         <div class="box post">
-          <a href="{{ "/waste-oil-collection" | relative_url }}" class="image left"><img src="images/holder.jpeg" alt="Waste Oil Collection" /></a>
+          <a href="{{ "/waste-oil-collection" | relative_url }}" class="image left"><img data-src="images/holder.jpeg" alt="Waste Oil Collection" /></a>
           <div class="inner">
             <h3><a href="{{ "/waste-oil-collection" | relative_url }}">Waste Oil Collection</a></h3>
             <p>Hep Oils can supply the containers required to collect waste cooking oil. The frequency of delivery/collection can be discussed to set a mutually agreeable time and day.</p>
@@ -79,7 +83,7 @@ permalink: /
       </section>
       <section class="6u 12u(narrower)">
         <div class="box post">
-          <a href="{{ "/waste-food-collection" | relative_url }}" class="image left"><img src="images/food.jpg" alt="Waste Food Collection" /></a>
+          <a href="{{ "/waste-food-collection" | relative_url }}" class="image left"><img data-src="images/food.jpg" alt="Waste Food Collection" /></a>
           <div class="inner">
             <h3><a href="{{ "/waste-food-collection" | relative_url }}">Waste Food Collection</a></h3>
             <p>We facilitate the collection of food waste by providing purpose built 120 litre capacity bins. We offer a bin exchange so you always have bins available.</p>
@@ -90,7 +94,7 @@ permalink: /
     <div class="row">
       <section class="6u 12u(narrower)">
         <div class="box post">
-          <a href="{{ "/supply" | relative_url }}" class="image left"><img src="images/roil.jpg" alt="Oil Supply" /></a>
+          <a href="{{ "/supply" | relative_url }}" class="image left"><img data-src="images/roil.jpg" alt="Oil Supply" /></a>
           <div class="inner">
             <h3><a href="{{ "/supply" | relative_url }}">Oil Supply</a></h3>
             <p>We offer long life vegetable oils, rapeseed oil and our own quality alternatives to branded oils. All shiped in 20ltr containers, 7 days a week.</p>
@@ -99,10 +103,14 @@ permalink: /
       </section>
       <section class="6u 12u(narrower)">
         <div class="box post">
-          <a href="{{ "/about" | relative_url }}" class="image left"><img src="images/SALSALogo.png" alt="About Us" /></a>
+          <a href="{{ "/about" | relative_url }}" class="image left">
+            <object data="images/SALSALogo.webp" type="image/webp" alt="About Us" class="salsa">
+              <img data-src="images/SALSALogo.png" alt="About Us" />
+            </object>
+          </a>
           <div class="inner">
-            <h3><a href="{{ "/about" | relative_url }}">Our Service</a></h3>
-            <p>With 20 years of experience Hep Oils takes care of all your oil needs. All waste is recycled, all drivers are fully trained and we are on hand whenver ou need us.</p>
+            <h3><a href="{{ "/about" | relative_url }}">About Us</a></h3>
+            <p>With 20 years of experience Hep Oils takes care of all your oil needs. All waste is recycled, all drivers are fully trained and we are on hand whenver you need us.</p>
           </div>
         </div>
       </section>

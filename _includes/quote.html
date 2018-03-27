@@ -3,31 +3,31 @@
       method="POST">
   <div class="row 100%">
     <div class="12u 12u(mobilep)">
-      <label>
-        <input class="fields" id="name" name="name" type="text" placeholder="Name" required>
+      <label for="name">Name
+        <input class="fields" id="name" name="name" type="text" autocomplete='name' required>
         <span></span>
       </label>
     </div>
   </div>
   <div class="row 100%">
     <div class="12u 12u(mobilep)">
-      <label>
-        <input class="fields" id="email" name="_replyto" type="email" placeholder="Email" required>
+      <label for="email">Email
+        <input class="fields" id="email" name="_replyto" type="email" autocomplete='email' required>
         <span></span>
       </label>
     </div>
   </div>
   <div class="row 100%">
     <div class="12u 12u(mobilep)">
-      <label>
-        <input class="fields" id="number" name="number" type="text" placeholder="Number">
+      <label for="number">Phone Number
+        <input class="fields" id="number" name="number" autocomplete='tel' type="number" >
         <span></span>
       </label> </div>
   </div>
   <div class="row 50%">
     <div class="12u">
-      <label>
-        <textarea class="fields" name="message" id="message" placeholder="Message" rows="5"></textarea>
+      <label for="message">Message
+        <textarea class="fields" name="message" id="message" rows="5"></textarea>
         <span></span>
       </label>
     </div>
@@ -37,18 +37,18 @@
       <fieldset>
         <legend>I'm interested in....</legend>
         <div>
-          <label for="supply">Cooking Oil Supply
+        <label for="supply">Cooking Oil Supply
         <input type="checkbox" id="supply" name="interest" value="supply">
     </label>
         </div>
         <div>
-          <label for="oil-col">Waste Oil Collection
+        <label for="oil-col">Waste Oil Collection
         <input type="checkbox" id="oil-col" name="interest" value="oil-col">
       </label>
         </div>
         <div>
-          <label for="food-col">Waste Food Collection
-        <input type="checkbox" id="oil-col" name="interest" value="food-col">
+        <label for="food-col">Waste Food Collection
+        <input type="checkbox" id="food-col" name="interest" value="food-col">
       </label>
         </div>
       </fieldset>
@@ -61,5 +61,5 @@
       </ul>
     </div>
   </div>
-  <input type="text" name="_gotcha" style="display:none" />
+  <input autocomplete='none' type="text" name="_gotcha" style="display:none" />
 </form>

@@ -1,31 +1,31 @@
-<head lang="en" xml:lang="en" xmlns= "http://www.w3.org/1999/xhtml">
+<head lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112007092-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-  dataLayer.push(arguments);
-}
-gtag("js", new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112007092-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-gtag("config", "UA-112007092-1");
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-112007092-1");
+  </script>
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% if page.url == "/404.html" %}
+    <meta http-equiv="refresh" content="5; url=/">
+  {% endif %}
   <meta charset="utf-8" />
   <meta http-equiv="Content-Language" content="en">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="{{ "/images/hepoil-logo.png" | prepend: site.baseurl }}"/>
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="stylesheet" href="{{ "/css/feather.css" | prepend: site.baseurl }}">
-  <!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
-  <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-  <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+  <link rel="icon" type="image/png" href="{{ " /images/hepoil-logo.png " | prepend: site.baseurl }}"/>
+  <link rel="manifest" href="manifest.json">
 
   <!-- Scripts -->
-
-  {% seo %}
+  <!--SEO-->
+  {% seo % title=false}
+  <!--SEO ENDS-->
   {% include cookie.html %}
 </head>
