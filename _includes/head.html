@@ -13,6 +13,9 @@
   </script>
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% if page.url == "/404.html" %}
+    <meta http-equiv="refresh" content="5; url=/">
+  {% endif %}
   <meta charset="utf-8" />
   <meta http-equiv="Content-Language" content="en">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
