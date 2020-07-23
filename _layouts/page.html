@@ -7,9 +7,17 @@ description: > # Hep Oils take care of all your requirements with regard to supp
 <!DOCTYPE HTML>
 <html lang="en">
 
+<script>
+  function js_Load() {
+    document.body.style.visibility='visible';
+  }
+
+  setTimeout(js_Load, 400)
+</script>
+
 {% include head.html %}
 
-<body class="index">
+<body class="index" style="visibility: hidden;" onload="js_Load()">
   <div id="page-wrapper">
     {% include page-header.html %} {{ content }} {% include footer.html %}
   </div>

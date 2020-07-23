@@ -44,8 +44,7 @@ sass:
   sass_dir: _sass
   style: compressed
 include: ['_pages', 'images', 'js']
-gems:
-  - jekyll-feed
+plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
